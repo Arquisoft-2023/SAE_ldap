@@ -39,7 +39,7 @@
         image: osixia/phpldapadmin:latest
         container_name: ldap_client
         environment:
-          PHPLDAPADMIN_LDAP_HOSTS: "SAE-ldap"
+          PHPLDAPADMIN_LDAP_HOSTS: "sae-ldap"
           PHPLDAPADMIN_HTTPS: "false"
         ports:
           - "127.0.0.6:8001:80"
