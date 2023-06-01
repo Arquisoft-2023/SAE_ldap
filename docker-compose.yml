@@ -42,6 +42,6 @@
           PHPLDAPADMIN_LDAP_HOSTS: "SAE-ldap"
           PHPLDAPADMIN_HTTPS: "false"
         ports:
-          - "8085:80"
+          - "127.0.0.6:8001:80"
         links:
           - sae-ldap
