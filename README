@@ -1,0 +1,9 @@
+**Usuario administrador**
+cn=admin,dc=unal,dc=edu,dc=co
+
+**Contraseña**
+admin
+
+**Pagina de referencia para creacion de usuarios**
+https://computingforgeeks.com/run-openldap-server-in-docker-containers/
+
