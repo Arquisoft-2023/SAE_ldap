@@ -4,31 +4,31 @@ services:
     image: osixia/openldap:1.5.0
     container_name: sae_ldap
     environment:
-      # COMPOSE_HTTP_TIMEOUT: 200
-      #LDAP_LOG_LEVEL: "256"
+      COMPOSE_HTTP_TIMEOUT: 200
+      LDAP_LOG_LEVEL: "256"
       LDAP_ORGANISATION: "SAE"
       LDAP_DOMAIN: "unal.edu.co"
       LDAP_BASE_DN: ""
       LDAP_ADMIN_PASSWORD: "admin"
       LDAP_CONFIG_PASSWORD: "config"
-      # LDAP_READONLY_USER: "true"
-      # LDAP_READONLY_USER_USERNAME: "readonly"
-      # LDAP_READONLY_USER_PASSWORD: "readonly"
-      # LDAP_BACKEND: "hdb"
+      LDAP_READONLY_USER: "true"
+      LDAP_READONLY_USER_USERNAME: "readonly"
+      LDAP_READONLY_USER_PASSWORD: "readonly"
+      LDAP_BACKEND: "hdb"
       #Seguridad
-      # LDAP_TLS: "false"
-      # LDAP_TLS_ENFORCE: "false"
-      # LDAP_TLS_VERIFY_CLIENT: "never"
-      # LDAP_SSL_HELPER_PREFIX: "ldap"
-      # #Replicacion
-      # LDAP_REPLICATION: "false"
-      # #Sincronizacion
-      # LDAP_REMOVE_CONFIG_AFTER_SETUP: "false"
-    # tty: true
-    # stdin_open: true
-    # volumes:
-    #   - /var/lib/ldap
-    #   - /etc/ldap/slapd.d
+      LDAP_TLS: "false"
+      LDAP_TLS_ENFORCE: "false"
+      LDAP_TLS_VERIFY_CLIENT: "never"
+      LDAP_SSL_HELPER_PREFIX: "ldap"
+      #Replicacion
+      LDAP_REPLICATION: "false"
+      #Sincronizacion
+      LDAP_REMOVE_CONFIG_AFTER_SETUP: "false"
+    tty: true
+    stdin_open: true
+    volumes:
+      - /var/lib/ldap
+      - /etc/ldap/slapd.d
     ports:
       #Puerto LDAP inseguro - usaremos este
       - "389:389"
