@@ -1,4 +1,4 @@
-version: "1.0"
+version: "3"
 services:
   sae-ldap:
     image: osixia/openldap:1.5.0
