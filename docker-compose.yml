@@ -1,6 +1,6 @@
 version: "2.1"
 services:
-  swarch2023i-ldap:
+  sae-ldap:
     image: osixia/openldap:1.1.8
     container_name: sae_unal
     environment:
