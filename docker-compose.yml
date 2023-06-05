@@ -1,7 +1,7 @@
-version: "3"
+version: "2.1"
 services:
   sae-ldap:
-    image: osixia/openldap:1.5.0
+    image: osixia/openldap:1.1.8
     container_name: sae_ldap
     environment:
      COMPOSE_HTTP_TIMEOUT: 200
