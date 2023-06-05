@@ -15,7 +15,7 @@ services:
       #LDAP_READONLY_USER_USERNAME: "readonly"
       #LDAP_READONLY_USER_PASSWORD: "readonly"
       LDAP_BACKEND: "hdb"
-      LDAP_TLS: "false"
+      LDAP_TLS: "true"
       LDAP_TLS_CRT_FILENAME: "ldap.crt"
       LDAP_TLS_KEY_FILENAME: "ldap.key"
       LDAP_TLS_CA_CRT_FILENAME: "ca.crt"
@@ -45,16 +45,16 @@ services:
         aliases:
           - sae_ldap
 
-  phpldapadmin:
-    image: osixia/phpldapadmin:latest
-    container_name: ldap_client
-    environment:
-      PHPLDAPADMIN_LDAP_HOSTS: "sae-ldap"
-      PHPLDAPADMIN_HTTPS: "false"
-    ports:
-      - "8001:80"
-    links:
-      - sae-ldap
+  # phpldapadmin:
+  #   image: osixia/phpldapadmin:latest
+  #   container_name: ldap_client
+  #   environment:
+  #     PHPLDAPADMIN_LDAP_HOSTS: "sae-ldap"
+  #     PHPLDAPADMIN_HTTPS: "false"
+  #   ports:
+  #     - "8001:80"
+  #   links:
+  #     - sae-ldap
 
 networks:
   nodes-networks:
