@@ -19,7 +19,7 @@ services:
       nodes-networks:
         aliases:
           - sae_ldap
-          
+
   phpldapadmin:
     image: osixia/phpldapadmin:latest
     container_name: ldap_client
@@ -30,7 +30,7 @@ services:
       - "8001:80"
     links:
       - sae-ldap
-      
- networks:
+
+networks:
   nodes-networks:
     external: true
