@@ -9,6 +9,12 @@ services:
       LDAP_BASE_DN: ""
       LDAP_ADMIN_PASSWORD: "admin"
       LDAP_CONFIG_PASSWORD: "config"
+      LDAP_TLS: "false"
+      LDAP_TLS_ENFORCE: "false"
+      LDAP_TLS_VERIFY_CLIENT: "never"
+      LDAP_SSL_HELPER_PREFIX: "ldap"
+      #Replicacion
+      LDAP_REPLICATION: "false"
     ports:
       #Puerto LDAP inseguro - usaremos este
       - "389:389"
