@@ -23,7 +23,7 @@ services:
      #Replicacion
      LDAP_REPLICATION: "false"
      #Sincronizacion
-     LDAP_REMOVE_CONFIG_AFTER_SETUP: "false"
+     LDAP_REMOVE_CONFIG_AFTER_SETUP: "true"
     tty: true
     stdin_open: true
     volumes:
