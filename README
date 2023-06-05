@@ -1,5 +1,5 @@
 **Usuario administrador**
-cn=admin,dc=unal,dc=edu,dc=co
+cn=admin,dc=sae,dc=unal,dc=edu,dc=co
 
 **Contraseña**
 admin
